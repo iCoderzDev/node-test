@@ -26,8 +26,12 @@ files:
   - source: /
     destination: /var/www/html/api
 hooks:
-  AfterInstall:
+  ApplicationStart:
     - location: Scripts/RunNode.sh
+      timeout: 180
+      runas: root
+  BeforeInstall:
+    - location: Scripts/InstallComponents.sh
       timeout: 180
       runas: root
   
