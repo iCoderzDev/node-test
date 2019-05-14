@@ -1,0 +1,1 @@
+pm2 restart /var/www/html/api/server.js

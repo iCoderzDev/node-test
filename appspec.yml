@@ -25,3 +25,8 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/api
+hooks:
+  AfterInstall:
+    - location: Scripts/RunNode.sh
+      timeout: 180
+  
