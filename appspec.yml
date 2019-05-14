@@ -27,6 +27,6 @@ files:
     destination: /var/www/html/api
 hooks:
   AfterInstall:
-    - location: Scripts/RunNode.sh
+    - location: /var/www/html/api/Scripts/RunNode.sh
       timeout: 180
   
