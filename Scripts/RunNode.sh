@@ -1,3 +1,3 @@
 #!/bin/bash
-source /home/ubuntu/.bash_profile
+source /home/ubuntu/.profile
 pm2 restart server.js
