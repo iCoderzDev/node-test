@@ -26,16 +26,17 @@ files:
   - source: /
     destination: /var/www/html/api
 permissions:
-  - object: /
+  - object: /var/www/html
     pattern: "**"
     owner: root
     group: root
+    mode: 644
 hooks:
   ApplicationStart:
     - location: Scripts/RunNode.sh
       timeout: 180
       runas: root
-  BeforeInstall:
+  AfterInstall:
     - location: Scripts/InstallComponents.sh
       timeout: 1800
       runas: root
