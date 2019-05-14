@@ -29,4 +29,5 @@ hooks:
   AfterInstall:
     - location: /var/www/html/api/Scripts/RunNode.sh
       timeout: 180
+      runas: root
   
