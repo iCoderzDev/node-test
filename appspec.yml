@@ -36,5 +36,8 @@ hooks:
     - location: Scripts/RunNode.sh
       timeout: 180
       runas: root
- 
+  AfterInstall:
+    - location: Scripts/InstallComponents.sh
+      timeout: 1800
+      runas: root
   
