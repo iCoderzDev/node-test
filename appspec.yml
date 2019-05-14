@@ -32,6 +32,5 @@ hooks:
       runas: root
   BeforeInstall:
     - location: Scripts/InstallComponents.sh
-      timeout: 180
-      runas: root
+      timeout: 1800
   
