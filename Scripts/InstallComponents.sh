@@ -1,6 +1,6 @@
 #!/bin/bash
  
-cd /home/ubuntu/app/ 
+cd /var/www/html/api/ 
 npm install
 
 npm install pm2 -g
