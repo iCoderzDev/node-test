@@ -1,3 +1,4 @@
 #!/bin/bash
-source /home/ubuntu/.profile
+	
+cd /var/www/html/api/ 
 pm2 restart server.js
