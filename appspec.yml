@@ -34,7 +34,7 @@ permissions:
 hooks:
   ApplicationStart:
     - location: Scripts/RunNode.sh
-      timeout: 180
+      timeout: 300
       runas: root
   AfterInstall:
     - location: Scripts/InstallComponents.sh
