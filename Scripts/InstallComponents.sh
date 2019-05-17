@@ -1,6 +1,6 @@
 #!/bin/bash
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+ 
+cd /home/ubuntu/app/ 
+npm install
 
 npm install pm2 -g
